@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "D2R Reimagined Trade Helper",
+  "short_name": "D2R Trade",
+  "version": "3.1.0",
+  "description": "Bulk listing, market price check, my listings, offers and chats with sound alerts for trading on d2r-reimagined.com. English / Russian.",
+  "icons": { "48": "icon48.png", "128": "icon128.png" },
+  "permissions": ["notifications"],
+  "host_permissions": [
+    "https://www.d2r-reimagined.com/*",
+    "https://api.d2r-reimagined.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.d2r-reimagined.com/*", "https://d2r-reimagined.com/*"],
+      "js": ["ws-hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.d2r-reimagined.com/*", "https://d2r-reimagined.com/*"],
+      "js": ["i18n.js", "content.js", "trade.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
