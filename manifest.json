@@ -10,7 +10,10 @@
     "https://www.d2r-reimagined.com/*",
     "https://api.d2r-reimagined.com/*"
   ],
-  "background": { "service_worker": "background.js" },
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.d2r-reimagined.com/*", "https://d2r-reimagined.com/*"],

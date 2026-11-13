@@ -1,6 +1,4 @@
-![Image Alt](https://github.com/makabrys/d2r-reimagined-trade-chrome-extension/blob/c18b52fc9491ebf3179213ba09fb4a28bb5d7084/trade_d2rr_extension.png)
-
-# D2R Reimagined Trade Helper (Chrome extension)
+# D2R Reimagined Trade Helper (Chrome and Firefox extension)
 
 Makes trading on d2r-reimagined.com comfortable: list many items at once, see what is already
 in trade, check market prices, and manage your listings, offers and chats in one window with
@@ -9,12 +7,24 @@ with the **EN | RU** toggle in either window. (Русская инструкци
 
 ## Install
 
+### Chrome
+
 1. Open `chrome://extensions` in Chrome.
 2. Turn on **Developer mode** (top right).
-3. Click **Load unpacked** and choose the `d2r-bulk-trade` folder (the one with `manifest.json`).
+3. Click **Load unpacked** and choose this project folder (the one with `manifest.json`).
 4. Open https://www.d2r-reimagined.com/trade and sign in on the site if you have not yet.
 
-After an update: click ↻ on the extension card in `chrome://extensions`, then press F5 on the site.
+### Firefox
+
+1. Open `about:debugging#/runtime/this-firefox` in Firefox.
+2. Click **Load Temporary Add-on…**.
+3. Select `firefox/manifest.json` inside this project folder.
+4. Open https://www.d2r-reimagined.com/trade and sign in on the site if you have not yet.
+
+Firefox temporary add-ons are removed when Firefox closes. To keep the extension installed
+permanently, it needs to be packaged and signed by Mozilla before installation.
+
+After an update, reload the extension from the browser's extensions page and refresh the site tab.
 
 ## Bulk listing (the "☰ Bulk listing" button, bottom left on Trade pages)
 
