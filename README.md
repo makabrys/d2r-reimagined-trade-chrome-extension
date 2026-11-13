@@ -1,3 +1,5 @@
+![Screenshot](https://github.com/makabrys/d2r-reimagined-trade-chrome-extension/blob/86453f8cd9379def79f85f1af695d5ace4be7dd5/trade_d2rr_extension.png)
+
 # D2R Reimagined Trade Helper (Chrome and Firefox extension)
 
 Makes trading on d2r-reimagined.com comfortable: list many items at once, see what is already
